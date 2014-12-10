@@ -39,6 +39,7 @@
 - 	[User.hbm.xml](entity/User.hbm.xml)
 
 	hibernate用户配置文件
+    
 2. dao
 
 - 	[OrderDaoImpl.java](dao/OrderDaoImpl.java)
@@ -52,6 +53,7 @@
 - 	[UserDaoImpl.java](dao/UserDaoImpl.java)
 
 	用户dao
+    
 3. service
 
 - 	[ShoppingCartService.java](service/ShoppingCartService.java)
@@ -61,6 +63,7 @@
 - 	[UserService.java](service/UserService.java)
 
 	用户业务接口
+    
 4. serviceimpl
 
 - 	[ShoppingCartServiceImpl.java](impl/ShoppingCartServiceImpl.java)
@@ -70,6 +73,7 @@
 - 	[UserServiceImpl.java](impl/UserServiceImpl.java)
 
 	业务实现
+    
 5. util
 
 - 	[BaseDao.java](util/BaseDao.java)
@@ -79,6 +83,7 @@
 - 	[BaseDaoImpl.java](util/BaseDaoImpl.java)
 
 	dao实现
+    
 6. web
 
 - 	[ShopCartAction.java](web/ShopCartAction.java)
