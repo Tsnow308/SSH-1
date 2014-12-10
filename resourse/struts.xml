@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" />
+    <constant name="struts.devMode" value="true" />
+    <package name="default" namespace="/" extends="struts-default">
+    			<action name="shopCart"  class="org.eg.sc.web.ShopCartAction"> 
+    					<result name="list" type="redirectAction">/shopCart!queryAllProduct.action</result>
+    					<result name="error">/error.htm</result>
+    					<result name="success">/listProduct.jsp</result>
+    					<result name="cart">/ok.jsp</result>
+    			</action>
+    			<action name="temp"  class="org.eg.sc.web.TempAction"> 
+    					<result name="success">/listProduct.jsp</result>
+    			</action>
+    </package>
+    
+	<package name="shopJson"  namespace="/json"  extends="json-default">
+				<action name="shopJson"  class="org.eg.sc.web.ShopJsonAction">
+							<result  type="json">
+									<param name="root">
+											datas
+									</param>
+									
+							</result>
+				</action>
+
+	</package>
+</struts>
